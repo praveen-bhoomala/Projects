@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    width:100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    width:100%;
+    height:80px;
+    background-color: black;
+    
+}
+.banner-section{
+   
+    width:100%;
+    height:310px;
+}
+.category-section{
+    
+    width:100%;
+    height:180px;
+}
+.arrival-section {
+    
+    width:100%;
+    height:210px;
+}
+.discount-section{
+   
+    width:100%;
+    height:150px;
+}
+.category-section ul li{
+    list-style: none;
+    display: inline-flex;
+    flex-direction:column;
+    width:110px;
+    height:140px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border: 1px double black;
+    text-align: center;
+    
+}
+.category-section ul li img{
+    width: 100%;
+    height: auto;
+}
+.category-section li:hover{
+    transform: scale(1.2);
+}
+.arrival-section ul li{
+    display: inline-flex;
+    flex-direction:column;
+    width: 230px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+.sub-section ul li:hover{
+    transform: scale(1.1);
+}
+.sub-section ul li img{
+    width: 100%;
+    border: 1px double black;
+}
+.banner-2{
+    position: relative;
+    top:350px;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.company h2 {
+    margin-left: 20px;
+}
+
+.products ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.products ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.products ul li a:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+.product-details{
+    display: flex;
+}
+.product-left{
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+}
+.product-left img{
+    width: 580px;
+    height: 380px;
+    margin-left: 40px;
+}
+.product-right{
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+}
+.product-right h4{
+    padding: 20px;
+}
+.product-right ul li{
+    list-style: none;
+    margin: 20px;
+}
+.product-button{
+    width:100%;
+}
+.addbtn,.buybtn{
+    width: 10rem;
+    height: 3rem;
+    margin: 10px;
+    
+}
+.addbtn{
+    background-color: rgb(46, 131, 105);
+}
+.buybtn{
+    background-color: rgb(70, 62, 138);
+}
