@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Clone - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateCartCount()">
+  <header>
+    <h1>Amazon Clone</h1>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </header>
+
+  <div class="container" id="productList"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const list = document.getElementById("productList");
+    products.forEach(p => {
+      list.innerHTML += `
+        <div class="product-card">
+          <img src="images/${p.image}" alt="${p.title}">
+          <h3>${p.title}</h3>
+          <p>₹${p.price}</p>
+          <a href="product.html?id=${p.id}">View Details</a>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

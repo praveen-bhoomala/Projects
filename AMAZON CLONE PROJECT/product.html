@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateCartCount()">
+  <header>
+    <h1>Amazon Clone</h1>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </header>
+
+  <div class="container" id="productDetails"></div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+    const product = products.find(p => p.id === id);
+
+    const details = document.getElementById("productDetails");
+    if (product) {
+      details.innerHTML = `
+        <div class="product-card">
+          <img src="images/${product.image}" alt="${product.title}">
+          <h2>${product.title}</h2>
+          <p>₹${product.price}</p>
+          <p>${product.description}</p>
+          <button onclick="addToCart(${product.id})">Add to Cart</button>
+        </div>
+      `;
+    } else {
+      details.innerHTML = "<p>Product not found.</p>";
+    }
+  </script>
+</body>
+</html>
