@@ -1,0 +1,10 @@
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle icon with "L" -->
+  <circle cx="100" cy="100" r="70" fill="black"></circle>
+  <text x="100" y="125" font-family="Poppins, Arial, sans-serif" font-weight="900" font-size="90" text-anchor="middle" fill="white">L</text>
+  
+  <!-- Brand text -->
+  <text x="200" y="120" font-family="Poppins, Arial, sans-serif" font-weight="900" font-size="72" fill="black">
+    Luxora
+  </text>
+</svg>
